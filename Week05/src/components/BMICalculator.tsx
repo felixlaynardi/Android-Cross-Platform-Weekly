@@ -75,9 +75,9 @@ const BMICalculator: React.FC<BMICalculator> = () => {
                     {text: 'Okay', handler: clearError}
                 ]}
             />
-            <IonGrid>
+            <IonGrid overflow-scroll="true">
                 <IonRow>
-                    <IonCol>
+                    <IonCol size-sm="8" offset-sm="2" size-md="6" offset-md="3">
                         <InputControl resetCalculation={resetCalculation} selectedValue={calcUnits} onSelectValue={selectCalcUnitHandler}/>
                         <IonItem>
                             <IonLabel position="floating">Tinggi Badan ({calcUnits === 'cmkg' ? 'cm' : 'feet'})</IonLabel>
@@ -87,11 +87,11 @@ const BMICalculator: React.FC<BMICalculator> = () => {
                             <IonLabel position="floating">Berat Badan ({calcUnits === 'cmkg' ? 'kg' : 'lbs'})</IonLabel>
                             <IonInput ref={weightInputRef}></IonInput>
                         </IonItem>
+                        <Controls onCalculate={calculateBMI} onReset={resetCalculation}/>
+                        <Result results={calculatedBMI} status={statusBMI} sedentary={undefined} exercise13={undefined} 
+                            exercise45={undefined} dailyExercise={undefined} intenseExercise={undefined} type={"BMI"}/>
                     </IonCol>
                 </IonRow>
-                <Controls onCalculate={calculateBMI} onReset={resetCalculation}/>
-                <Result results={calculatedBMI} status={statusBMI} sedentary={undefined} exercise13={undefined} 
-                    exercise45={undefined} dailyExercise={undefined} intenseExercise={undefined} type={"BMI"}/>
             </IonGrid>
         </>
     )
