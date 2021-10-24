@@ -1,0 +1,6 @@
+.fabButton{
+    display: var(--ion-fab-button-display);
+}
+.headerButton{
+    display: var(--ion-header-button-display);
+}
