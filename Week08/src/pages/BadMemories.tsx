@@ -32,7 +32,7 @@ const BadMemories: React.FC = () => {
                     {badMemories.length === 0 && (
                         <IonRow>
                             <IonCol className="ion-text-center">
-                                <h2>No good memories found.</h2>
+                                <h2>No bad memories found.</h2>
                             </IonCol>
                         </IonRow>
                     )}

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS memories(
+    id SERIAL PRIMARY KEY,
+    imagePath VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    type VARCHAR(255) NOT NULL,
+    base64Url LONGTEXT NOT NULL,
+    lat FLOAT NOT NULL,
+    lng FLOAT NOT NULL
+);
