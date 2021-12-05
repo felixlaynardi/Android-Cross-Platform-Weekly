@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Week09",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
