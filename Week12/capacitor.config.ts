@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'Week11',
+  appId: 'android.cross.platform.notification',
+  appName: 'Week12',
   webDir: 'build',
   bundledWebRuntime: false
 };

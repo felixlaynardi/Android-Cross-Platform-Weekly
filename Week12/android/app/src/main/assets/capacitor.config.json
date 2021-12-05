@@ -1,0 +1,6 @@
+{
+	"appId": "android.cross.platform.notification",
+	"appName": "Week12",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
